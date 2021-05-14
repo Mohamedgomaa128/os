@@ -136,6 +136,8 @@ void oneThreadMode(){
 		printf("error, return code is %d", rc);
 		exit(-1);
 	}
+	pthread_join(id, NULL);
+
 }
 
 void rowThreadMode(){
